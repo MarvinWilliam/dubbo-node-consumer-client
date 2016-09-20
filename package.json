@@ -1,6 +1,6 @@
 {
     "name": "dubbo-node-consumer-client",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "",
     "main": "index.js",
     "scripts": {
@@ -8,14 +8,14 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://MarvinWilliam@github.com/MarvinWilliam/dubbo-client.git"
+        "url": "git+https://MarvinWilliam@github.com/MarvinWilliam/dubbo-node-consumer-client.git"
     },
     "author": "",
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/MarvinWilliam/dubbo-client/issues"
+        "url": "https://github.com/MarvinWilliam/dubbo-node-consumer-client/issues"
     },
-    "homepage": "https://github.com/MarvinWilliam/dubbo-client#readme",
+    "homepage": "https://github.com/MarvinWilliam/dubbo-node-consumer-client#readme",
     "dependencies": {
         "node-zookeeper-client": "^0.2.2",
         "request": "^2.75.0",
