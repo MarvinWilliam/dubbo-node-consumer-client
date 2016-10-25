@@ -25,7 +25,8 @@ dubboClient.init({
         'version': ''       //dubbo版本
     },
     registry: '192.168.0.102:2181',     //zookeeper注册地址
-    loadbalance: 'random'       //接口调用算法,random-权重/round-轮调,默认round
+    loadbalance: 'random',       //接口调用算法,random-权重/round-轮调,默认round
+    portfilter: []      //过滤端口
 });
 ```
 
@@ -88,6 +89,9 @@ options.registry
 
 options.loadbalance
 ---服务调用算法,random-权重/round-轮调,默认round
+
+options.portfilter
+---过滤指定的端口
 
 logger
 ---日志记录器,可选
