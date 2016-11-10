@@ -10,6 +10,9 @@ dubboClient.init({
         'pid': process.pid,
         'version': '1.0.0'
     },
+    dubbo: {
+        providerTimeout: 10
+    },
     registry: '192.168.0.100:2181',
     loadbalance: 'random'
 });
