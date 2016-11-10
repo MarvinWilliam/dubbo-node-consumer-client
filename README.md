@@ -24,6 +24,9 @@ dubboClient.init({
         'pid': process.pid,     //node进程id
         'version': ''       //dubbo版本
     },
+    dubbo: {
+        providerTimeout: 10     //jsonrpc超时时间,默认为45秒
+    },
     registry: '192.168.0.102:2181',     //zookeeper注册地址
     loadbalance: 'random',       //接口调用算法,random-权重/round-轮调,默认round
     portfilter: []      //过滤端口
