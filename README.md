@@ -1,16 +1,18 @@
-#dubbo-node-consumer-client
+**注:该项目已经不再维护, 如果有需要可以尝试新的组件 [node-dubbo-client](https://github.com/MarvinWilliam/node-dubbo-client)** 
+
+# dubbo-node-consumer-client
 
 dubbo的node消费者端.暂时只提供注册消费者的功能.
 
-##Install
+## Install
 
 ```
 npm install --save dubbo-node-consumer-client
 ```
 
-##Usage
+## Usage
 
-####*项目启动的时候先对dubbo进行配置.
+#### * 项目启动的时候先对dubbo进行配置.
 
 ```
 var dubboClient  = require('dubbo-node-consumer-client');
@@ -33,7 +35,7 @@ dubboClient.init({
 });
 ```
 
-####*配置完成之后,对所有使用到的服务进行注册
+#### * 配置完成之后,对所有使用到的服务进行注册
 
 **注意:如果注册的服务不存在于zookeeper上,会在zookeeper上创建服务文件夹,等待服务注册.**
 
@@ -52,7 +54,7 @@ var interfaces = [
 dubboClient.registry(interfaces);
 ```
 
-####*以上配置完成即可调用服务
+#### * 以上配置完成即可调用服务
 
 ```
 /**
@@ -80,7 +82,7 @@ dubboClient.getService(serviceName, version, group)
            });
 ```
 
-##API
+## API
 
 **init(options[,logger])**
 
